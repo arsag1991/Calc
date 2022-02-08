@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#0B0B0B"
+        android:onClick="onClickDiv"
+        android:text="/"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bMinus"
+        app:layout_constraintStart_toStartOf="@+id/bMinus"
+        app:layout_constraintTop_toBottomOf="@+id/bMinus" />
+
+    <Button
+        android:id="@+id/bPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#0B0B0B"
+        android:onClick="onClickPlus"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edInput"
+        app:layout_constraintTop_toBottomOf="@+id/edInput" />
+
+    <Button
+        android:id="@+id/bMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#0B0B0B"
+        android:onClick="onClickMinus"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/edInput"
+        app:layout_constraintStart_toEndOf="@+id/bPlus"
+        app:layout_constraintTop_toBottomOf="@+id/edInput" />
+
+    <Button
+        android:id="@+id/bMult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#0B0B0B"
+        android:onClick="onClickMult"
+        android:text="*"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bPlus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bPlus"
+        app:layout_constraintTop_toBottomOf="@+id/bPlus" />
+
+    <Button
+        android:id="@+id/bResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#0B0B0B"
+        android:onClick="onResult"
+        android:text="result"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="292dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#0B0B0B"
+        android:onClick="onClear"
+        android:text="C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
