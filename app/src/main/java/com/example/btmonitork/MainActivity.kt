@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             bMinus.setOnClickListener { textAdd("-") }
             bMult.setOnClickListener { textAdd("*") }
             bDiv.setOnClickListener { textAdd("/") }
-            bPercent.setOnClickListener { textAdd("%") }
+            bPercent.setOnClickListener { textAdd("/100") }
             b000.setOnClickListener { textAdd("000") }
             bPoint.setOnClickListener { textAdd(".") }
             bClear.setOnClickListener {
